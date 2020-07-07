@@ -9,8 +9,21 @@ const Contato = ({ navigation }: { navigation: any }) => {
         <View style={{flex: 1}}>
             {/* CONTACT INFO */}
             <View style={styles.container}>
-                <Icon name="globe" size={30} color="#ffffff"/>
-                <Text style={styles.text}>https://www.nobugs.com.br</Text>
+                <View style={[{marginTop: 20}, styles.containerIn]}>
+                    <Icon name="globe" size={30} color="#ffffff"/>
+                    <Text style={styles.text}>https://www.nobugs.com.br</Text>
+                </View>
+                <View style={[{marginTop: 20}, styles.containerIn]}>
+                    <Icon name="phone-square" size={30} color="#ffffff"/>
+                    <Text style={styles.text}>(31) 3612-6397</Text>
+                </View>
+                <View style={[{marginTop: 20}, styles.containerIn]}>
+                    <Icon name="location-arrow" size={30} color="#ffffff"/>
+                    <Text style={styles.text}>Av. P.H. Rolfs S/n, LBI - 2º andar,</Text>
+                </View>
+                <View style={styles.containerIn}>
+                    <Text style={styles.text2}>Campus Universitário, Viçosa - MG</Text>
+                </View>
             </View>
 
             {/* MAP */}
@@ -48,15 +61,24 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#0075C9',
-        flexDirection: "row",
         paddingTop: 30,
         paddingLeft: 30,
+    },
+    containerIn: {
+        backgroundColor: '#0075C9',
+        flexDirection: "row",
     },
     text: {
         color: "#ffffff",
         fontWeight: "bold",
         fontSize: 18,
         marginLeft: 30
+    },
+    text2: {
+        color: "#ffffff",
+        fontWeight: "bold",
+        fontSize: 17,
+        marginLeft: 50
     },
     map: {
         width: "100%",

@@ -29,7 +29,7 @@ const Ej = ({ navigation }: { navigation: any }) => {
         
         <TouchableOpacity 
           style={[{marginTop: 20}, styles.buttons]}
-          onPress={() => {navigation.navigate("Home")}}
+          onPress={() => {navigation.navigate("pres")}}
         >
           <Text style={{textAlign: "center", fontWeight: "bold", fontSize: 16}}>Presidência</Text>
         </TouchableOpacity>
@@ -59,7 +59,7 @@ const Ej = ({ navigation }: { navigation: any }) => {
           style={[{marginTop: 20}, styles.buttons]}
           onPress={() => {navigation.navigate("Home")}}
         >
-          <Text style={{textAlign: "center", fontWeight: "bold", fontSize: 16}}>Comunicação</Text>
+          <Text style={{textAlign: "center", fontWeight: "bold", fontSize: 16}}>Marketing</Text>
         </TouchableOpacity>
 
         <Text style={[{fontSize: 30, marginTop: 20} ,styles.title]}>Fale Conosco</Text>

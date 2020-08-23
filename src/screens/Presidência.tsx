@@ -41,19 +41,29 @@ const Pres = ({ navigation } : { navigation:any }) => {
                         titleStyle={styles.accorTitle}
                         >
                         <List.Item 
-                            title="First item"
+                            title="Responsável por todo o Administrativo-Financeiro da empresa, o Assessor Financeiro
+                            trabalha com o Diretor Presidente para executar desde o Planejamento Financeiro até as
+                            etapas de regulamentação necessárias da EJ, cuidando do fluxo de caixa e mantendo o
+                            contato com a prestadora de serviços contábeis."
                             titleStyle={styles.accorText}
+                            titleNumberOfLines={10}
                         />
                     </List.Accordion>
                 </List.Section>
                 <List.Section style={styles.accordionStyle}>
                     <List.Accordion
-                        title="Diretor Presidente"
+                        title="Gerente de Negócios"
                         titleStyle={styles.accorTitle}
                         >
                         <List.Item 
-                            title="First item"
-                            description="First item descripition"     
+                            title="Responsável por fazer a ponte entre EJ e outras empresas, o Gerente de Negócios
+                            trabalha com o Diretor Presidente para exercer a representatividade da No Bugs, seja isso
+                            por meio de contatos com o Departamento e Universidade, ou com empresas sêniores. Um grande
+                            papel do Gerente de Negócios é perceber oportunidades de formar parcerias entre a Empresa
+                            Júnior e outras entidades e capitalizar isso, formando laços fortes que trazem uma maior formação
+                            empreendedora para os membros e aproximação com o mercado!"
+                            titleStyle={styles.accorText}
+                            titleNumberOfLines={14}     
                         />
                     </List.Accordion>
                 </List.Section>
@@ -88,7 +98,9 @@ const styles = StyleSheet.create({
         fontSize: 20,
     },
     accorText:{
-            
+        color: "#000000" ,
+        fontSize: 15,
+        textAlign: "justify"
     },
 }) 
 

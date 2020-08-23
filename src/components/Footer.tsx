@@ -8,7 +8,7 @@ export default function Footer(){
         <View>
             <Image style={styles.footer}
                 width={screen.width/2}
-                source={require('../src/static/img/logo_nb.png')}
+                source={require('../static/img/logo_nb.png')}
             />
         </View>
 )}

@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image } from "react-native";
 import MapView, { Marker } from 'react-native-maps';
 import { FontAwesome as Icon } from "@expo/vector-icons";
-import Footer from '../Footer'
+import Footer from '../components/Footer'
 
 const Contato = ({ navigation }: { navigation: any }) => {
     return (

@@ -1,10 +1,13 @@
-import React from 'react';
+import * as React from 'react';
 import { StyleSheet, ScrollView, Text, useWindowDimensions, TouchableOpacity, View } from "react-native";
 import Image from 'react-native-scalable-image';
-import Footer from '../Footer'
+import Footer from '../components/Footer'
 
 const Ej = ({ navigation }: { navigation: any }) => {
   const screen=useWindowDimensions();
+  const [expanded, setExpanded] = React.useState(true);
+  const handlePress = () => setExpanded(!expanded);
+
   return (
     <ScrollView style={{flex:1}}>
       <ScrollView style={styles.container}>
